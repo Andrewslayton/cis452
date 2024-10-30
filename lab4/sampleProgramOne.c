@@ -10,7 +10,6 @@ int main()
     printf("Running the program\n");
     pthread_t thread1; // thread ID
     int threadStatus;  // captures any error code
-    // create and start a thread executing the "doGreeting()" function
     threadStatus = pthread_create(&thread1, NULL, doGreeting, NULL);
     sleep(2);
     if (threadStatus != 0)
